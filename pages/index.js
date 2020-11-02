@@ -1,9 +1,12 @@
 import Head from 'next/head'
+import Image from 'next/image'
+
 import Navbar from '../components/Navbar'
 
 import {table, minifyRecords} from './api/utils/Airtable';
 
 export default function Home({initialTodos}) {
+  console.log(initialTodos);
   return (
     <div>
       <Head>
@@ -16,7 +19,12 @@ export default function Home({initialTodos}) {
       </main>
       <footer>
           Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" />
+          <Image src="/vercel.svg"
+            alt="Picture"
+            width={500}
+            height={500}
+            loading={"lazy"}
+          ></Image>
       </footer>
     </div>
   )
