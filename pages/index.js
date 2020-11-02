@@ -6,7 +6,7 @@ import Navbar from '../components/Navbar'
 import {table, minifyRecords} from './api/utils/Airtable';
 
 export default function Home({initialTodos}) {
-  console.log(initialTodos);
+  console.log(`TO-DO: ${initialTodos}`);
   return (
     <div>
       <Head>
