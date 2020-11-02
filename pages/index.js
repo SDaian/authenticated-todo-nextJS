@@ -18,13 +18,6 @@ export default function Home({initialTodos}) {
         <h1>Todo App</h1>
       </main>
       <footer>
-          Powered by{' '}
-          <Image src="/vercel.svg"
-            alt="Picture"
-            width={500}
-            height={500}
-            loading={"lazy"}
-          ></Image>
       </footer>
     </div>
   )
