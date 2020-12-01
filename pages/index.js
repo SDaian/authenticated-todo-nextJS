@@ -45,7 +45,7 @@ export default function Home({ initialTodos, user }) {
 export async function getServerSideProps(context) {
   const session = await auth0.getSession(context.req);
   let todos = [];
-  console.log(session.user);
+  console.log(session?.user);
   try {
     if (session?.user) {
       todos = await table
